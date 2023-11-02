@@ -3,7 +3,7 @@
 export function Toggle() {
   return (
     <>
-      <label className="bb8-toggle sm:scale-50 md:scale-90">
+      <label className="bb8-toggle scale-[0.4] sm:scale-50 md:scale-75 2xl:scale-95">
         <input className="bb8-toggle__checkbox" type="checkbox" />
         <div className="bb8-toggle__container">
           <div className="bb8-toggle__scenery">

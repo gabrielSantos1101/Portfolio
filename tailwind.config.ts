@@ -16,14 +16,15 @@ module.exports = {
       },
     },
     extend: {
-      colors: {
-        gridAreas: {
-          sm: 'D1 D1 D2 D3',
-          md: 'header header header',
-          lg: 'header header header',
-        },
+      colors: {},
+      gridTemplateAreas: {
+        'md-layout': ['A A A', 'B C D', 'E F G', 'E H H', 'I I J'],
+        'lg-layout': ['A A B C', 'D E F C', 'G G F H', 'I I J J'],
       },
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  plugins: [
+    require('tailwindcss-animate'),
+    require('@savvywombat/tailwindcss-grid-areas'),
+  ],
 }
