@@ -26,5 +26,4 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-
 @import url(./toggle.css);
