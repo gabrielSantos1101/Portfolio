@@ -3,7 +3,7 @@ import { Toggle } from '@/components/Toggle'
 export default function Home() {
   return (
     <main className="flex min-h-screen w-full  flex-col items-center  justify-between p-12 md:p-12 lg:p-16 2xl:p-24">
-      <section className="grid h-screen w-full grid-cols-sm-layout grid-rows-sm-layout gap-4 grid-areas-sm-layout md:grid-cols-md-layout md:grid-rows-md-layout md:grid-areas-md-layout lg:grid-cols-lg-layout lg:grid-rows-lg-layout lg:grid-areas-lg-layout 2xl:w-4/5">
+      <section className="grid h-screen w-fit max-w-[1370px] grid-cols-sm-layout grid-rows-sm-layout gap-4 grid-areas-sm-layout md:w-full md:grid-cols-md-layout md:grid-rows-md-layout md:grid-areas-md-layout lg:grid-cols-lg-layout lg:grid-rows-lg-layout lg:grid-areas-lg-layout">
         <div className="flex items-center justify-center rounded-xl bg-slate-300 grid-in-A ">
           1
         </div>

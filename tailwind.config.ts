@@ -29,8 +29,8 @@ module.exports = {
       },
       gridTemplateRows: {
         'sm-layout': 'repeat(7, minmax(9.375rem, 12.5rem))',
-        'md-layout': 'repeat(5, minmax(0, 20.625rem))',
-        'lg-layout': 'repeat(4, minmax(0, 20.625rem))',
+        'md-layout': 'repeat(5, minmax(10rem, 20.625rem))',
+        'lg-layout': 'repeat(4, minmax(10rem, 20.625rem))',
       },
     },
   },
