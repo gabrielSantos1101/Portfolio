@@ -28,12 +28,11 @@ module.exports = {
         'lg-layout': 'repeat(4, minmax(0, 20.625rem))',
       },
       gridTemplateRows: {
-        'sm-layout':
-          'repeat(7, clamp(9.375rem, 4.3155rem + 19.0476vw, 20.625rem))',
+        'sm-layout': 'repeat(7, clamp(9rem, -1rem + 50vw, 12.5rem))',
         'md-layout':
-          'repeat(5, clamp(9.375rem, 4.3155rem + 19.0476vw, 20.625rem))',
+          'repeat(5, clamp(13.5rem, -2.4375rem + 33.2031vw, 18.8125rem))',
         'lg-layout':
-          'repeat(4, clamp(9.375rem, 4.3155rem + 19.0476vw, 20.625rem))',
+          'repeat(4, clamp(13.25rem, -0.7332rem + 21.8487vw, 19.75rem))',
       },
     },
   },
