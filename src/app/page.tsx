@@ -1,6 +1,4 @@
-import { Theme, Toggle } from '@/components/Toggle'
-import { cookies } from 'next/headers'
-const theme: Theme = cookies().get('theme') as unknown as Theme
+import Toggle from '@/components/Toggle'
 
 export default function Home() {
   return (
@@ -16,7 +14,7 @@ export default function Home() {
           3
         </div>
         <div className="flex items-center justify-center rounded-xl bg-lime-300 grid-in-D ">
-          <Toggle theme={theme} />
+          <Toggle />
         </div>
         <div className="flex items-center justify-center rounded-xl bg-cyan-400 grid-in-E ">
           5

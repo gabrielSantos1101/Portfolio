@@ -1,16 +1,16 @@
 'use client'
 
+import { getCookie } from 'cookies-next'
 import { useState } from 'react'
 
 export enum Theme {
   dark = 'dark',
   light = 'light',
 }
-interface Props {
-  theme: Theme
-}
 
-export function Toggle({ theme }: Props) {
+const theme = getCookie('theme') as Theme
+
+export default function Toggle() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [_theme, setTheme] = useState<Theme>(theme)
 
@@ -25,12 +25,14 @@ export function Toggle({ theme }: Props) {
       document.cookie = `theme=${Theme.light}`
     }
   }
+
   return (
     <>
       <label className="bb8-toggle scale-[0.4] sm:scale-50 md:scale-75 2xl:scale-95">
         <input
           className="bb8-toggle__checkbox"
           type="checkbox"
+          checked={_theme === Theme.dark}
           onChange={() => {
             toogleTheme()
           }}
