@@ -1,10 +1,40 @@
 'use client'
 
-export function Toggle() {
+import { useState } from 'react'
+
+export enum Theme {
+  dark = 'dark',
+  light = 'light',
+}
+interface Props {
+  theme: Theme
+}
+
+export function Toggle({ theme }: Props) {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [_theme, setTheme] = useState<Theme>(theme)
+
+  const toogleTheme = () => {
+    const root = document.getElementsByTagName('html')[0]
+    root.classList.toggle(Theme.dark)
+    if (root.classList.contains(Theme.dark)) {
+      setTheme(Theme.dark)
+      document.cookie = `theme=${Theme.dark}`
+    } else {
+      setTheme(Theme.light)
+      document.cookie = `theme=${Theme.light}`
+    }
+  }
   return (
     <>
       <label className="bb8-toggle scale-[0.4] sm:scale-50 md:scale-75 2xl:scale-95">
-        <input className="bb8-toggle__checkbox" type="checkbox" />
+        <input
+          className="bb8-toggle__checkbox"
+          type="checkbox"
+          onChange={() => {
+            toogleTheme()
+          }}
+        />
         <div className="bb8-toggle__container">
           <div className="bb8-toggle__scenery">
             <div className="bb8-toggle__star"></div>
