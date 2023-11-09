@@ -14,6 +14,11 @@ export default function Toggle() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [_theme, setTheme] = useState<Theme>(theme)
 
+  // if (!theme) {
+  //   document.cookie = `theme=${Theme.dark}`
+  //   document.getElementsByTagName('html')[0].classList.toggle(Theme.dark)
+  // }
+
   const toogleTheme = () => {
     const root = document.getElementsByTagName('html')[0]
     root.classList.toggle(Theme.dark)
