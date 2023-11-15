@@ -1,11 +1,10 @@
-import { NextApiRequest, NextApiResponse } from 'next'
+export type Status = 'idle' | 'dnd' | 'online' | 'offline'
 
-const handler = async (req: NextApiRequest, res: NextApiResponse) => {
-  const response = await fetch(
-    `https://api.lanyard.rest/v1/users/291267904891125760`,
-  ).then((res) => res.json())
-
-  res.status(200).json(response)
+export const handler = async () => {
+  const response: Status = await fetch(`${process.env.NEXT_PUBLIC_DISCORD_API}`)
+    .then((res) => res.json())
+    .then((res) => {
+      return res.data.discord_status
+    })
+  return response
 }
-
-export default handler

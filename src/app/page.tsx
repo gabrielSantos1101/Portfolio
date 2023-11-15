@@ -1,10 +1,11 @@
+import OnlineCard from '@/components/OnlineCard'
 import Toggle from '@/components/Toggle'
 import { Card } from '@/components/ui/card'
 
 export default function Home() {
   return (
     <main className="flex min-h-screen w-full  flex-col items-center  justify-between p-3 md:p-12 lg:p-16 2xl:p-24">
-      <section className="grid h-screen w-fit max-w-[1370px] grid-cols-sm-layout grid-rows-sm-layout gap-2 grid-areas-sm-layout md:w-full md:grid-cols-md-layout md:grid-rows-md-layout md:gap-3 md:grid-areas-md-layout lg:grid-cols-lg-layout lg:grid-rows-lg-layout lg:gap-4 lg:grid-areas-lg-layout">
+      <section className="grid h-screen w-fit max-w-[1370px] grid-cols-sm-layout grid-rows-sm-layout gap-2 transition-all grid-areas-sm-layout md:w-full md:grid-cols-md-layout md:grid-rows-md-layout md:gap-3 md:grid-areas-md-layout lg:grid-cols-lg-layout lg:grid-rows-lg-layout lg:gap-4 lg:grid-areas-lg-layout">
         <Card className="bg-bunker-950 grid-in-A">
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
@@ -27,7 +28,7 @@ export default function Home() {
         </Card>
 
         <Card className="flex items-center justify-center rounded-xl bg-cyan-400 grid-in-E ">
-          5
+          <OnlineCard />
         </Card>
 
         <Card className="flex items-center justify-center rounded-xl bg-purple-500 grid-in-F ">
