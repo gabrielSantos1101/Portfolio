@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={theme?.value}>
       <body
-        className={`${inter.className} bg-slate-100 text-gray-950 transition-all dark:bg-gray-950 dark:text-zinc-100`}
+        className={`${inter.className} bg-slate-100 text-gray-950 transition-colors dark:bg-gray-950 dark:text-zinc-100`}
       >
         {children}
       </body>

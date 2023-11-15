@@ -33,7 +33,7 @@ module.exports = {
       },
       gridTemplateAreas: {
         'sm-layout': ['A A ', 'B C', 'B D', 'E F', 'G H', 'I H', 'J J'],
-        'md-layout': ['A A A', 'B C D', 'E F G', 'E H H', 'I I J'],
+        'md-layout': ['A A A', 'B C D', 'F E G', 'F H H', 'I I J'],
         'lg-layout': ['A A B C', 'D E F C', 'G G F H', 'I I J J'],
       },
       gridTemplateColumns: {
