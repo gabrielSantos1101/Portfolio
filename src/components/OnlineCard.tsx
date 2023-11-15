@@ -18,17 +18,17 @@ const OnlineCard = () => {
     switch (data) {
       case 'idle':
       case 'dnd':
-        return ['online', 'bg-[#6DD2B7] dark:bg-[#35AC8C]']
+        return ['online', 'bg-[#6DD2B7] dark:bg-[#22b38c]']
       case 'online':
-        return ['online', 'bg-[#6DD2B7] dark:bg-[#35AC8C]']
+        return ['online', 'bg-[#6DD2B7] dark:bg-[#22b38c]']
       case 'offline':
-        return ['offline', 'bg-[#FFADC6] dark:bg-[#FF477E]']
+        return ['offline', 'bg-[#f7769d] dark:bg-[#FF477E]']
     }
   }, [data])
 
   return (
     <div
-      className={`relative flex aspect-square h-full w-full overflow-hidden rounded-3xl text-white shadow-sm `}
+      className={`relative flex aspect-square h-full w-full overflow-hidden  text-white shadow-sm ${status[1]}`}
     >
       <div className="absolute inset-0 flex items-center justify-center text-base font-bold md:text-2xl xl:text-3xl">
         <div className="flex items-center gap-3">

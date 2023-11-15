@@ -27,7 +27,7 @@ export default function Home() {
           <Toggle />
         </Card>
 
-        <Card className="flex items-center justify-center rounded-xl bg-cyan-400 grid-in-E ">
+        <Card className="flex items-center justify-center rounded-xl p-0 grid-in-E ">
           <OnlineCard />
         </Card>
 
