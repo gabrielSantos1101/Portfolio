@@ -1,5 +1,6 @@
 import OnlineCard from '@/components/OnlineCard'
 import Toggle from '@/components/Toggle'
+import { TypographieText } from '@/components/TypographieText'
 import { Card } from '@/components/ui/card'
 
 export default function Home() {
@@ -7,6 +8,12 @@ export default function Home() {
     <main className="flex min-h-screen w-full  flex-col items-center  justify-between p-3 md:p-12 lg:p-16 2xl:p-24">
       <section className="grid h-screen w-fit max-w-[1370px] grid-cols-sm-layout grid-rows-sm-layout gap-2 transition-all grid-areas-sm-layout md:w-full md:grid-cols-md-layout md:grid-rows-md-layout md:gap-3 md:grid-areas-md-layout lg:grid-cols-lg-layout lg:grid-rows-lg-layout lg:gap-4 lg:grid-areas-lg-layout">
         <Card className="bg-bunker-950 grid-in-A">
+          <TypographieText
+            tag="h1"
+            text="Gabriel Santos"
+            className="text-3xl text-slate-100"
+          />
+          {/* <h1>Gabriel Santos</h1> */}
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
             voluptatum deleniti perspiciatis eveniet consectetur corporis,
