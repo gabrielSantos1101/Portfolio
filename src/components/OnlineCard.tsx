@@ -35,6 +35,9 @@ const OnlineCard = () => {
           {/* Loading Dot Animation */}
           <span className="h-2 w-2 md:h-5 md:w-5">
             <span className="absolute h-2 w-2 rounded-full bg-white md:h-5 md:w-5" />
+            {status[0] === 'online' && (
+              <span className="absolute h-2 w-2 animate-ping rounded-full bg-white md:h-5 md:w-5" />
+            )}
           </span>
           <p>{status[0]}</p>
         </div>

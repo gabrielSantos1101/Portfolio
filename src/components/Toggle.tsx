@@ -10,7 +10,7 @@ export enum Theme {
 
 const theme = getCookie('theme') as Theme
 
-export default function Toggle() {
+export function Toggle() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [_theme, setTheme] = useState<Theme>(theme)
 
