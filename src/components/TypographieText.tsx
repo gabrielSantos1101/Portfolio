@@ -20,13 +20,13 @@ function getRandomWord(text: string) {
 }
 
 type TypographieTextProps = {
-  tag: keyof JSX.IntrinsicElements
+  htmlTag: keyof JSX.IntrinsicElements
   text: string
   className?: string | undefined
 }
 
 export function TypographieText({
-  tag: Tag,
+  htmlTag: Tag,
   className,
   text,
 }: TypographieTextProps) {

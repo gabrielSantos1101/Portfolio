@@ -9,7 +9,7 @@ export default function Home() {
       <section className="grid h-screen w-fit max-w-[1370px] grid-cols-sm-layout grid-rows-sm-layout gap-2 transition-all grid-areas-sm-layout md:w-full md:grid-cols-md-layout md:grid-rows-md-layout md:gap-3 md:grid-areas-md-layout lg:grid-cols-lg-layout lg:grid-rows-lg-layout lg:gap-4 lg:grid-areas-lg-layout">
         <Card className="flex flex-col place-content-evenly bg-bunker-950 grid-in-A">
           <TypographieText
-            tag="h1"
+            htmlTag="h1"
             text="Olá, eu sou o Gabriel Santos"
             className="text-3xl text-slate-100"
           />
