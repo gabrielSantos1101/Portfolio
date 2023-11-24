@@ -1,6 +1,7 @@
 import OnlineCard from '@/components/OnlineCard'
 import { Toggle } from '@/components/Toggle'
 import { TypographieText } from '@/components/TypographieText'
+import { WhiterMultline } from '@/components/WhiterMultline'
 import { Card } from '@/components/ui/card'
 
 export default function Home() {
@@ -13,12 +14,18 @@ export default function Home() {
             text="Olá, eu sou o Gabriel Santos"
             className="text-3xl text-slate-100"
           />
-          <p>
+          <WhiterMultline
+            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
+            voluptatum deleniti perspiciatis eveniet consectetur corporis,
+            soluta ullam deserunt autem error hic recusandae optio laudantium
+            exercitationem enim aspernatur quas inventore ipsa."
+          />
+          {/* <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
             voluptatum deleniti perspiciatis eveniet consectetur corporis,
             soluta ullam deserunt autem error hic recusandae optio laudantium
             exercitationem enim aspernatur quas inventore ipsa.
-          </p>
+          </p> */}
         </Card>
 
         <Card className="flex items-center justify-center bg-slate-500 grid-in-B ">
