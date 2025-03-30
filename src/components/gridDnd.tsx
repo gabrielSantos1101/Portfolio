@@ -2,15 +2,15 @@
 
 import {
   animations
-} from "@formkit/drag-and-drop";
+} from '@formkit/drag-and-drop';
 import {
   useDragAndDrop
-} from "@formkit/drag-and-drop/react";
-import OnlineCard from "./OnlineCard";
-import { Toggle } from "./Toggle";
-import { TypographieText } from "./TypographieText";
-import { Card } from "./ui/card";
-import { WhiterMultline } from "./WhiterMultline";
+} from '@formkit/drag-and-drop/react';
+import OnlineCard from './OnlineCard';
+import { Toggle } from './Toggle';
+import { TypographieText } from './TypographieText';
+import { Card } from './ui/card';
+import { WhiterMultline } from './WhiterMultline';
 
 export const GridDnd = () => {
   const [
