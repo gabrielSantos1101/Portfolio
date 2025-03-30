@@ -1,5 +1,6 @@
 'use client'
 
+import { animations } from '@formkit/drag-and-drop';
 import {
   useDragAndDrop
 } from '@formkit/drag-and-drop/react';
@@ -31,7 +32,7 @@ export const GridDnd = () => {
       'education',
     ], {
       plugins: [
-        // animations()
+        animations()
       ]
     });
 
