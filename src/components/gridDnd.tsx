@@ -1,16 +1,13 @@
 'use client'
 
 import {
-  animations
-} from '@formkit/drag-and-drop';
-import {
   useDragAndDrop
 } from '@formkit/drag-and-drop/react';
 import OnlineCard from './OnlineCard';
 import { Toggle } from './Toggle';
 import { TypographieText } from './TypographieText';
-import { Card } from './ui/card';
 import { WhiterMultline } from './WhiterMultline';
+import { Card } from './ui/card';
 
 export const GridDnd = () => {
   const [
@@ -34,7 +31,8 @@ export const GridDnd = () => {
       'education',
     ], {
       plugins: [
-        animations()]
+        // animations()
+      ]
     });
 
   const renderCard = (value: string) => {
